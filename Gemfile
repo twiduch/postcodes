@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'haml'
 gem 'puma'
 gem 'sinatra'
+gem 'httpx'
 
 group :development, :test do
   gem 'pry'
