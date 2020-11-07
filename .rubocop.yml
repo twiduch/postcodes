@@ -1,0 +1,38 @@
+---
+
+require: rubocop-rspec
+
+AllCops:
+  Exclude:
+    - 'gems/**/*'
+
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Style/RedundantParentheses:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 6
+
+Naming/MethodParameterName:
+  MinNameLength: 1
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+GlobalVars:
+  AllowedVariables:
+    - '$:'
