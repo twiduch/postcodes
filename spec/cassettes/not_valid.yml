@@ -1,0 +1,126 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://postcodes.io/postcodes/w138qn
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - postcodes.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 08 Nov 2020 23:05:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d198ca43557b1040a37ce69832e97d4791604876717; expires=Tue, 08-Dec-20
+        23:05:17 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"2fe-DZRpPeOaKWm1p2nfjkOdAI/bFEw"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '85'
+      Cf-Request-Id:
+      - 064bb467680000f288aaa7a000000001
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=MfP62YtGQ9w1H47MbZECLg06rf7Sc30nUrfvenGuTZRssxCE0CdzrfATuFosB4O%2FBjTFw0s24oGFpcmzx%2BhrkLjZYXHDfXi9Q%2BtnwlY%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ef2f01f0fe2f288-WAW
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"W13 8QN","quality":1,"eastings":516852,"northings":180558,"country":"England","nhs_ha":"London","longitude":-0.317513,"latitude":51.511875,"european_electoral_region":"London","primary_care_trust":"Ealing","region":"London","lsoa":"Ealing
+        019A","msoa":"Ealing 019","incode":"8QN","outcode":"W13","parliamentary_constituency":"Ealing
+        Central and Acton","admin_district":"Ealing","parish":"Ealing, unparished
+        area","admin_county":null,"admin_ward":"Ealing Broadway","ced":null,"ccg":"NHS
+        Ealing","nuts":"Ealing","codes":{"admin_district":"E09000009","admin_county":"E99999999","admin_ward":"E05000173","parish":"E43000199","parliamentary_constituency":"E14000674","ccg":"E38000048","ccg_id":"07W","ced":"E99999999","nuts":"UKI73"}}}'
+  recorded_at: Sun, 08 Nov 2020 23:05:17 GMT
+- request:
+    method: get
+    uri: http://postcodes.io/postcodes/ne301dp
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - postcodes.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 08 Nov 2020 23:05:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d52143394f8a44c461eee09cccf0552b51604876718; expires=Tue, 08-Dec-20
+        23:05:18 GMT; path=/; domain=.postcodes.io; HttpOnly; SameSite=Lax
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"329-6zaB2U6b+1P+0lRTgXjD4EcNoAM"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '82'
+      Cf-Request-Id:
+      - 064bb469790000f2b0a32ca000000001
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=cs%2F8cR28QWKqUgcpGz5w%2FSE%2F0P9L7D%2BcRKARgB6wNwZb9qXw5ynqN78AbwqdVUCbZNuqHAWqq0htI8qYSHG6cPzslYxXbjkiAnPL6XY%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ef2f0225dcdf2b0-WAW
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"NE30 1DP","quality":1,"eastings":435958,"northings":568671,"country":"England","nhs_ha":"North
+        East","longitude":-1.439269,"latitude":55.011303,"european_electoral_region":"North
+        East","primary_care_trust":"North Tyneside","region":"North East","lsoa":"North
+        Tyneside 016C","msoa":"North Tyneside 016","incode":"1DP","outcode":"NE30","parliamentary_constituency":"Tynemouth","admin_district":"North
+        Tyneside","parish":"North Tyneside, unparished area","admin_county":null,"admin_ward":"Tynemouth","ced":null,"ccg":"NHS
+        North Tyneside","nuts":"Tyneside","codes":{"admin_district":"E08000022","admin_county":"E99999999","admin_ward":"E05001130","parish":"E43000176","parliamentary_constituency":"E14001006","ccg":"E38000127","ccg_id":"99C","ced":"E99999999","nuts":"UKC22"}}}'
+  recorded_at: Sun, 08 Nov 2020 23:05:17 GMT
+recorded_with: VCR 6.0.0

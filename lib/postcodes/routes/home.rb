@@ -3,7 +3,11 @@
 module Postcodes
   class Base < Sinatra::Base
     get '/?' do
-      @result = CheckPostcode.call(params[:code])
+      @postcode = params[:postcode]
+      @result = Operations::CheckPostcode.call(@postcode)
+      @lsoa = Services::AllowedValues::Lsoa.call
+      @allowed_postcodes = Services::AllowedValues::Postcodes.call
+
       haml :index
     end
   end

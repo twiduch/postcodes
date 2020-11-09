@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
-require 'pry'
+require 'active_support/core_ext/hash/keys'
+require 'net/http'
 require 'sinatra/base'
 require 'sinatra/reloader'
+require 'yaml'
 
-$LOAD_PATH.unshift __dir__
+files = Dir['lib/**/*.rb'].map { |f| f.split('/').drop(1).join('/') }.sort
+files.each { |f| require(f) }

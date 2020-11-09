@@ -1,6 +1,38 @@
 body {
-  font: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+
   background: #fff;
   color: #0d0d0d;
-  padding: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  padding: 1px 10px;
+  background: #333;
+  color: #fff;
+}
+
+footer {
+  margin: 30px 20px;
+}
+h1, h2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
+}
+
+section {
+  margin: 10px;
+}
+
+#main {
+  display: flex;
+}
+
+#column {
+  flex: 50%;
 }

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-$LOAD_PATH.unshift __dir__
+$LOAD_PATH.unshift "#{__dir__}/lib"
 ENV['ROOT_PATH'] = __dir__
 
-require 'config/boot'
+require_relative 'config/boot'
 run Postcodes::Base

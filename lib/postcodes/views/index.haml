@@ -1,8 +1,27 @@
-%p Provide a postcode to check
+%section#main
+  %section#column
+    %h2 Provide a postcode to check
 
-%form
-  %label{for: 'code'} Postcode
-  %input{name: 'code'}
-  %input{type: 'submit'}
+    %form
+      %label{for: 'postcode'} Postcode
+      %input{name: 'postcode'}
+      %input{type: 'submit'}
 
-%p=@result
+  %section#column
+    %h2 Allowed LSOAs
+    %ul
+      - @lsoa.each do |lsoa|
+        %li=lsoa.split.map(&:capitalize).join(' ')
+
+    %h2 Allowed Postcodes
+    %ul
+      - @allowed_postcodes.each do |postcode|
+        %li=postcode.upcase
+
+%footer
+  - if @result[:status] == 600
+    = 'Something went wrong'
+  - elsif @result[:status] == 500
+    = "Postcode #{@postcode} is not valid - LSOA: #{@result[:lsoa]}"
+  - else
+    = "Postcode #{@postcode} is valid - LSOA: #{@result[:lsoa]}"

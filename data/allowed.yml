@@ -1,0 +1,9 @@
+---
+allowed:
+  lsoa:
+    - Southwark
+    - Lambeth
+
+  postcodes:
+    - CT45DR
+    - HP201SQ
